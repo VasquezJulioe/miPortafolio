@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio</title>
+  <link rel="stylesheet" href="css/styles-pages.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <nav class="navbar">
+        <div class="brand">
+          <h2>J<span>V</span></h2>
+        </div>
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="#about">Codigos</a></li>
+          <li><a href="#portfolio">Portafolio</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <div class="info-content">
+        <h1>Taller <span>PSeInt</span> #1: Variables e impresión</h1>
+        <p>A continuación se describirán los ejercicios que deberá realizar. Por favor guardar los ejercicios dado que
+          serán requeridos en entregas posteriores. Todos los ejercicios deben
+          estar escritos en <span style="font-weight: bold;">PSeInt</span> con el perfil <span
+            style="font-weight: bold;">Estricto</span>.</p><br>
+        <ol>
+          <li>Realizar un programa el cual solicite su nombre y apellidos.</li>
+          <li>Realizar un programa el cual solicite su nombre, apellidos, edad y estatura.</li>
+          <li>Realizar un programa el cual solicite su nombre y apellidos, también debe capturar nombre y apellidos de
+            su padre y madre. Al finalizar debe imprimir en pantalla el siguiente
+            mensaje "Yo [Nombre Completo], soy hijo de [Nombre de la Madre] y [Nombre del Padre].</li>
+          <li>Realizar un programa el cual solicite el nombre de una ciudad capital y el país. Al finalizar debe
+            imprimir en pantalla el siguiente mensaje "La ciudad [Nombre de la Ciudad],
+            es la capital del país [Nombre del País]</li>
+          <li>Realizar un programa el cual solicite el nombre de su mascota, edad de la mascota, el tipo de mascota y su
+            nombre completo. Al finalizar el sistema debe e imprimir en pantalla
+            el siguiente mensaje: [Nombre de Mascota] es un(a) [Tipo de Mascota], el cual, tiene [Edad de la Mascota]
+            años de edad y [Nombre Completo] es actualmente su dueño(a).</li>
+        </ol><br>
+        <a href="https://github.com/VasquezJulioe/ControlGithub/tree/taller1" target="_blank"><button
+            class="download-cv">Github</button></a>
+        <a href="https://youtu.be/g6SQvovZs4k" target="_blank"><button class="download-cv">YouTube</button></a>
+      </div>
+
+    </main>
+  </div>
+
+  <div class="about" id="about">
+    <div class="about-heading">
+      <h2>Codigos</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="about-container">
+      <div class="about-info">
+        <h1 id="erealizados">Punto 1</h1>
+        <div class="container">
+          <div class="label">
+            <h2>Proceso nombre_apellidos</h2>
+          </div>
+          <div class="content">
+            <pre>
+              <code>
+Proceso nombre_apellidos
+  Definir nombre Como Caracter;
+  Definir apellidos Como Caracter;
+  
+  Escribir "¿Digite su nombre?";
+  Leer nombre;
+  
+  Escribir "¿Digite sus apellidos?";
+  Leer apellidos;
+  
+  Limpiar Pantalla;
+  
+  Escribir "Bienvenido ", nombre," ", apellidos;
+FinProceso
+              </code>
+            </pre>
+          </div>
+        </div>
+        <br>
+      </div>
+      <div class="about-info">
+        <h1 id="elaboral">Punto 2</h1>
+        <div class="container">
+          <div class="label">
+            <h2>Proceso nombre_apellidos_edad_estatura</h2>
+          </div>
+          <div class="content">
+            <pre>
+              <code>
+Proceso nombre_apellidos_edad_estatura
+  Definir nombre,apellidos Como Caracter;
+  Definir edad Como Entero;
+  Definir estatura Como Real;
+  
+  Escribir "¿Digite su nombre?";
+  Leer nombre;
+  
+  Escribir "¿Digite sus apellidos?";
+  Leer apellidos;
+  
+  Escribir "¿Digite su edad?";
+  Leer edad;
+  
+  Escribir "¿Digite su estatura?";
+  Leer estatura;
+  
+  Limpiar Pantalla;
+  
+  Escribir "Bienvenido ", nombre," ", apellidos,' tiene una de ',edad,' con estatura de ',estatura;
+FinProceso
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>
+      <div class="about-info">
+        <h1 id="erealizados">Punto 3</h1>
+        <div class="container">
+          <div class="label">
+            <h2>Proceso nombre_apellidos_padre_madre</h2>
+          </div>
+          <div class="content">
+            <pre>
+              <code>
+Proceso nombre_apellidos_padre_madre
+  Definir nombre,apellidos Como Caracter;
+  Definir nombrePadre,apellidosPadre Como Caracter;
+  Definir nombreMadre,apellidosMadre Como Caracter;
+  
+  Escribir "¿Digite su nombre?";
+  Leer nombre;
+  Escribir "¿Digite sus apellidos?";
+  Leer apellidos;
+  
+  Escribir "¿Digite nombre del Padre?";
+  Leer nombrePadre;
+  Escribir "¿Digite apellidos del Padre?";
+  Leer apellidosPadre;
+  
+  Escribir "¿Digite nombre de la Madre?";
+  Leer nombreMadre;
+  Escribir "¿Digite apellidos de la Madre?";
+  Leer apellidosMadre;
+  Limpiar Pantalla;
+  
+  Escribir "Yo ", nombre," ", apellidos,' soy hijo de ',nombreMadre,' y ',nombrePadre;
+FinProceso
+//"Yo [Nombre Completo], soy hijo de [Nombre de la Madre] y [Nombre del Padre]."
+              </code>
+            </pre>
+          </div>
+        </div>
+        <br>
+      </div>
+      <div class="about-info">
+        <h1 id="elaboral">Punto 4</h1>
+        <div class="container">
+          <div class="label">
+            <h2>Proceso capitalPais</h2>
+          </div>
+          <div class="content">
+            <pre>
+              <code>
+Proceso capitalPais
+  Definir capital,pais Como Caracter;
+  
+  Escribir "¿Digite el pais?";
+  Leer pais;
+  Escribir "¿Digite la capital?";
+  Leer capital;
+  
+  Escribir 'La ciudad ',capital,', es la capital del pais ',pais;
+FinProceso
+//La ciudad [Nombre de la Ciudad], es la capital del país [Nombre del País]
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>
+      <div class="about-info">
+        <h1 id="elaboral">Punto 5</h1>
+        <div class="container">
+          <div class="label">
+            <h2>Proceso mascota</h2>
+          </div>
+          <div class="content">
+            <pre>
+              <code>
+Proceso mascota
+  Definir nombreMascota,tipoMascota Como Caracter;
+  Definir nombrePropietario Como Caracter;
+  Definir edadMascota Como Entero;
+  
+  Escribir "¿Digite nombre de la mascota?";
+  Leer nombreMascota;
+  Escribir "¿Digite el tipo de mascota?";
+  Leer tipoMascota;
+  Escribir "¿Digite edad de la mascota?";
+  Leer edadMascota;
+  Escribir "¿Digite su nombre completo?";
+  Leer nombrePropietario;
+  
+  Escribir nombreMascota,' es un(a) ',tipoMascota,' el cual, tiene ',edadMascota,' años de edad y ',nombrePropietario,' es actualmente su dueño(a).';
+FinProceso
+// [Nombre de Mascota] es un(a) [Tipo de Mascota], el cual, tiene [Edad de la Mascota] años de edad y [Nombre Completo] es actualmente su dueño(a).
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="portfolio" id="portfolio">
+    <div class="portfolio-heading">
+      <h2>Mi Portafolio</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="container">
+      <div class="card">
+        <div class="card__img">
+        </div>
+        <div class="card__title">
+          <h2>Taller PSeInt #1</h2>
+        </div>
+        <div class="card__proyect-links">
+          <a href="https://github.com/VasquezJulioe/ControlGithub/tree/taller1" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="taller1.html">
+            <i class="fas fa-globe-asia"></i>
+          </a>
+          <a href="https://youtu.be/g6SQvovZs4k" target="_blank">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+        <div class="button-content">
+          <button class="project-details-button download-cv">
+            <a href="taller1.html">Detalles del Proyecto</a>
+          </button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__img">
+        </div>
+        <div class="card__title">
+          <h2>Taller PSeInt #2</h2>
+        </div>
+        <div class="card__proyect-links">
+          <a href="https://github.com/VasquezJulioe/ControlGithub/tree/taller2">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="taller2.html">
+            <i class="fas fa-globe-asia"></i>
+          </a>
+          <a href="https://youtu.be/jPFkblLo6Go">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+        <div class="button-content">
+          <button class="project-details-button download-cv">
+            <a href="taller2.html">Detalles del Proyecto</a>
+          </button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__img">
+        </div>
+        <div class="card__title">
+          <h2>Taller PSeInt #3</h2>
+        </div>
+        <div class="card__proyect-links">
+          <a href="https://github.com/VasquezJulioe/ControlGithub/tree/taller3">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="taller3.html">
+            <i class="fas fa-globe-asia"></i>
+          </a>
+          <a href="https://youtu.be/XkAg0eQXb8k">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+        <div class="button-content">
+          <button class="project-details-button download-cv">
+            <a href="taller3.html">Detalles del Proyecto</a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="card">
+        <div class="card__img">
+        </div>
+        <div class="card__title">
+          <h2>Taller PSeInt #4</h2>
+        </div>
+        <div class="card__proyect-links">
+          <a href="https://github.com/VasquezJulioe/ControlGithub/tree/taller4">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="taller4.html">
+            <i class="fas fa-globe-asia"></i>
+          </a>
+          <a href="https://youtu.be/MUAnbpYU-AM">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+        <div class="button-content">
+          <button class="project-details-button download-cv">
+            <a href="taller4.html">Detalles del Proyecto</a>
+          </button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__img">
+        </div>
+        <div class="card__title">
+          <h2>Taller PSeInt #5</h2>
+        </div>
+        <div class="card__proyect-links">
+          <a href="https://github.com/VasquezJulioe/ControlGithub/tree/taller5">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="taller5.html">
+            <i class="fas fa-globe-asia"></i>
+          </a>
+          <a href="https://youtu.be/yET8Pwhsb4w">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+        <div class="button-content">
+          <button class="project-details-button download-cv">
+            <a href="taller5.html">Detalles del Proyecto</a>
+          </button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__img">
+        </div>
+        <div class="card__title">
+          <h2>Taller de CVS</h2>
+        </div>
+        <div class="card__proyect-links">
+          <a href="https://github.com/VasquezJulioe/ControlGithub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="tallerCVS.html">
+            <i class="fas fa-globe-asia"></i>
+          </a>
+          <a href="https://youtu.be/yET8Pwhsb4w">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+        <div class="button-content">
+          <button class="project-details-button download-cv">
+            <a href="tallerCVS.html">Detalles del Proyecto</a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="card">
+        <div class="card__img">
+        </div>
+        <div class="card__title">
+          <h2>Taller de Java</h2>
+        </div>
+        <div class="card__proyect-links">
+          <a href="https://github.com/VasquezJulioe/TallerJava">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="tallerJava.html">
+            <i class="fas fa-globe-asia"></i>
+          </a>
+          <a href="https://youtu.be/2YmmJQh7iCA">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+        <div class="button-content">
+          <button class="project-details-button download-cv">
+            <a href="tallerJava.html">Detalles del Proyecto</a>
+          </button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__img">
+        </div>
+        <div class="card__title">
+          <h2>Taller de HTML5</h2>
+        </div>
+        <div class="card__proyect-links">
+          <a href="https://github.com/VasquezJulioe/TallerHTML5/tree/3c3b6d2c2acda8af63ca336b7e0894edc03d96f8">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="tallerHTML.html">
+            <i class="fas fa-globe-asia"></i>
+          </a>
+          <a href="https://youtu.be/NAUyeItlwjY">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+        <div class="button-content">
+          <button class="project-details-button download-cv">
+            <a href="tallerHTML.html">Detalles del Proyecto</a>
+          </button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__img">
+        </div>
+        <div class="card__title">
+          <h2>Taller de CSS3</h2>
+        </div>
+        <div class="card__proyect-links">
+          <a href="https://github.com/VasquezJulioe/TallerHTML5/tree/tallerCCS3">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="tallerCSS.html">
+            <i class="fas fa-globe-asia"></i>
+          </a>
+          <a href="https://youtu.be/OyTwpyfuLNs">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+        <div class="button-content">
+          <button class="project-details-button download-cv">
+            <a href="tallerCSS.html">Detalles del Proyecto</a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="card">
+        <div class="card__img">
+        </div>
+        <div class="card__title">
+          <h2>Taller de JavaScript</h2>
+        </div>
+        <div class="card__proyect-links">
+          <a href="https://github.com/VasquezJulioe/TallerHTML5/tree/tallerJAVASCRIPT">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://vasquezjulioe.github.io/TallerHTML5/">
+            <i class="fas fa-globe-asia"></i>
+          </a>
+          <a href="https://youtu.be/v-eB1EnGirE">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+        <div class="button-content">
+          <button class="project-details-button download-cv">
+            <a href="tallerJavaScript.html">Detalles del Proyecto</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact" id="contact">
+    <div class="contact-heading">
+      <h2>Contacto</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="container-contact">
+      <img src="Utils/miFoto.jpg" alt="">
+      <div class="contact-form">
+        <h4>Envia me un mensaje...</h4>
+        <form class="form-group">
+          <input type="text" placeholder="Nombre" class="input">
+          <input type="email" placeholder="Email" class="input">
+          <textarea name="message" placeholder="Por favor escribe aquí..."></textarea>
+          <button type="submit" class="btn-submit" onclick="alert('MENSAJE ENVIADO')">Enviar Mensaje</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <h2>Julio Vasquez</h2>
+      <h5>Ingeniero Electrónico</h5>
+    </div>
+    <div class="sotial-networks">
+      <a href="https://www.instagram.com/juliovasquezrojas/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://twitter.com/VasquezJulioe" target="_blank"><i class="fab fa-twitter-square"></i></a>
+      <a href="https://www.linkedin.com/in/vasquezjulioe/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.youtube.com/@julioevasquez8684" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://github.com/VasquezJulioe" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+  </footer>
+  <script type="text/JavaScript" src="js/script.js"></script>
+</body>
+
+</html>

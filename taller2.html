@@ -1,0 +1,1777 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio</title>
+  <link rel="stylesheet" href="css/styles-pages.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <nav class="navbar">
+        <div class="brand">
+          <h2>J<span>V</span></h2>
+        </div>
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="#about">Codigos</a></li>
+          <li><a href="#portfolio">Portafolio</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <div class="info-content">
+        <h1>Taller <span>PSeInt</span> #2: Condicionales</h1>
+        <p>
+          A continuación se describirán los ejercicios que deberá realizar. Por favor guardar los ejercicios dado que serán requeridos en entregas posteriores. Todos los ejercicios deben
+          estar escritos en <span style="font-weight: bold;">PSeInt</span> con el perfil <span style="font-weight: bold;">Estricto</span>.
+        </p><br>
+        <ol>
+          <li>Realizar un programa en el cual se solicite la edad de una persona. Si la persona es mayor o igual a 18 años, deberá mostrar en pantalla: Usted es mayor de edad.</li>
+          <li>Realizar un programa en el cual se solicite la edad de una persona. Si la persona es menor a 18 años, deberá mostrar en pantalla: Usted aún es un niño(a).</li>
+          <li>Realizar un programa en el cual se solicite el nombre, apellidos y edad de la persona. Si la persona es mayor o igual a 18 años, entonce se deberá imprimir en pantalla
+          <span style="font-style: italic; font-weight: bold;">[Nombre completo] usted es mayor de edad, por lo tanto puede entrar a la fiesta</span>. Si la edad de la persona es menor que
+          18 años, entonces, deberá imprimirse el siguiente mensaje: <span style="font-style: italic; font-weight: bold;">[Nombre completo] usted es menor de edad, por lo tanto, no puede
+          entrar a la fiesta, por favor devuélvase a su casa</span>.</li>
+          <li>La video tienda que presta sus servicios de alquiler de películas a los usuarios del barrio el Porvenir, requiere de una aplicación que permita registrar el alquiler de las
+          películas que adquieren sus usuarios.&nbsp;Para cada usuario se debe permitir la opción de alquilar película,&nbsp;consultar películas disponibles y recibir película en la video
+          tienda&nbsp;con la opción de realizar anotaciones sobre estas si se llegan a&nbsp;presentar daños u otra novedad sobre la película.</li>
+          <li>La Droguería Mi Salud presta sus servicios en la localidad de Suba y requiere una aplicación para poder facturar los productos que vende a sus clientes y para ello, los
+          productos tienen unas características que deben indicársele al cliente para que pueda escoger el producto a comprar.&nbsp;Para cada cliente, se tienen las opciones de compra de
+          producto, consulta de precios por producto y devoluciones en caso de que se presenten.</li>
+          <li>El taller de motos "El Maquinista" recibe motocicletas de alto cilindraje para realizar las respectivas revisiones y requiere una aplicación que le permita registrar los
+          servicios generados a sus clientes. Para cada motocicleta se debe tener registro del ingreso al taller y las observaciones por parte del cliente. También debe existir registro de
+          salida del taller con las novedades y otra de arreglos hechos por el mecánico en caso de que se requiera inventariar cambios repuestos en la motocicleta al entregarla.</li>
+          <li>La Secretaría de Salud Municipal requiere de una aplicación que le permita calcular el IMC (Índice de masa corporal) y requiere los datos peso en kilogramos y estatura en
+          metros Para cada persona encuestada adicional a los datos suministrados, debe mostrar el resultado para cada uno y establecer en qué rango se encuentra (bajo peso, normal,
+          sobrepeso y obeso).</li>
+          <li>El pastelero Don Carlos es el mejor pastelero de la ciudad y requiere una aplicación que le permita registrar los pedidos de los clientes en cuanto a las tortas que realiza.
+          Cada torta tiene unas características propias como sabor, cantidad (porciones) y decoraciones). Se requiere que la aplicación permita registrar los pedidos, las tortas disponibles
+          y las ventas que se registren diariamente.</li>
+          <li>El profesor de geometría está explicando a sus estudiantes las fórmulas para calcular el área de diferentes figuras geométricas, para ello requiere una aplicación que le
+          facilite el ejercicio solicitándole los valores al estudiante. La aplicación debe permitir que el estudiante seleccione si desea calcular el área de un rectángulo, triángulo o
+          trapecio. No olvide solicitar los datos necesarios para realizar cada cálculo y mostrar su respectivo resultado.</li>
+          <li>El banco "Su banco fiel" es un banco que inicia sus actividades financieras y necesita una aplicación para llevar las cuentas de sus usuarios; por lo tanto, se sugiere que la
+          cuenta tenga los atributos titular y cantidad. Para cada cliente las cuentas permitirán realizar ingresos, retiros o consultas de valor. En los ingresos no se pueden insertar
+          valores negativos y para los retiros el valor no puede ser mayor al valor que tiene en la cuenta.</li>
+          </ol><br>
+        <a href="https://github.com/VasquezJulioe/ControlGithub/tree/taller2" target="_blank"><button class="download-cv">Github</button></a>
+        <a href="https://youtu.be/jPFkblLo6Go" target="_blank"><button class="download-cv">YouTube</button></a>
+      </div>
+
+    </main>
+  </div>
+
+  <div class="about" id="about">
+    <div class="about-heading">
+      <h2>Codigos</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="about-container">
+      <div class="about-info">
+        <h1 id="erealizados">Punto 1</h1>
+        <div class="container">
+          <div class="label">
+            <h2>Proceso mayorEdad</h2>
+          </div>
+          <div class="content">
+            <pre>
+              <code>
+              Proceso mayorEdad
+	
+                Definir edad Como Entero;
+                
+                Escribir "¿Cual es su edad?";
+                leer edad;
+                
+                si edad >= 18 Entonces
+                  Escribir "Usted es mayor de edad.";
+                SiNo
+                  Escribir "Usted es menor de edad.";
+                FinSi
+                
+              FinProceso
+              </code>
+            </pre>
+          </div>
+        </div>
+        <br>
+      </div>
+      <div class="about-info">
+        <h1 id="elaboral">Punto 2</h1>
+        <div class="container">
+          <div class="label">
+            <h2>Proceso menorEdad</h2>
+          </div>
+          <div class="content">
+            <pre>
+              <code>
+              Proceso menorEdad
+                Definir edad Como Entero;
+                
+                Escribir "¿Cual es su edad?";
+                leer edad;
+                
+                si edad < 18 Entonces
+                  Escribir "Usted aún es un niño(a).";
+                SiNo
+                  Escribir "Usted ya es un(a) adulto(a).";
+                FinSi
+              FinProceso
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>
+      <div class="about-info">
+        <h1 id="erealizados">Punto 3</h1>
+        <div class="container">
+          <div class="label">
+            <h2>Proceso entradaFiesta</h2>
+          </div>
+          <div class="content">
+            <pre>
+              <code>
+              Proceso entradaFiesta
+                Definir nombre Como Caracter;
+                Definir apellidos Como Caracter;
+                Definir edad Como Entero;
+                
+                Escribir "Digite su nombre";
+                Leer nombre;
+                Escribir "Digite sus apellidos";
+                Leer apellidos;
+                Escribir "Digite su edad";
+                Leer edad;
+                
+                Limpiar Pantalla;
+                
+                Si edad >= 18 Entonces
+                  Escribir nombre," ",apellidos, " usted es mayor de edad por lo tanto puede entrar";
+                SiNo
+                  Escribir nombre," ",apellidos, " usted es menor de edad, por lo tanto, no puede entrar a la fiesta, por favor devuélvase a su casa";
+                FinSi
+              FinProceso
+              </code>
+            </pre>
+          </div>
+        </div>
+        <br>
+      </div>
+      <div class="about-info">
+        <h1 id="elaboral">Punto 4</h1>
+        <div class="container">
+          <div class="label">
+            <h2>Proceso elPorvenirPelis</h2>
+          </div>
+          <div class="content">
+            <pre>
+              <code>
+Proceso elPorvenirPelis
+	Definir anotacion,direccion,terminar Como Caracter;
+	Definir nombreUsuario_0,nombreUsuario_1,nombreUsuario_2,nombreUsuario_3,nombreUsuario_4 Como Caracter;
+	Definir opcion,opcionPeliculas,opcionPeli,opcionRegresar,cantidadPeliculas,peli,cantPeliAlquilar,cantPeliRegresar Como Entero;
+	Definir usuario_0,usuario_1,usuario_2,usuario_3,usuario_4,identidad Como Entero;
+	Definir pelis_usuario_0,pelis_usuario_1,pelis_usuario_2,pelis_usuario_3,pelis_usuario_4 Como Entero;
+	Definir disponiblePelis_1,disponiblePelis_2,disponiblePelis_3,disponiblePelis_4 Como Entero;
+	Definir precio_peli_1,precio_peli_2,precio_peli_3,precio_peli_4,total_Dia,precio Como Real;
+	Definir nuevoUsuario,finalizar Como Logico;
+	nuevoUsuario <- Verdadero;
+	finalizar <- Falso;
+	
+	// venta inicial del dia
+	total_Dia <- 100;
+	// Nombre de Usuarios
+	nombreUsuario_0 <- '';
+	nombreUsuario_1 <- 'Julio';
+	nombreUsuario_2 <- 'Adriana';
+	nombreUsuario_3 <- 'Yelenis';
+	nombreUsuario_4 <- 'Juan';
+	// Pelis de los usuarios
+	pelis_usuario_0 <- 0;
+	pelis_usuario_1 <- 1;
+	pelis_usuario_2 <- 3;
+	pelis_usuario_3 <- 2;
+	pelis_usuario_4 <- 1;
+	// Identicacion de Usuarios
+	usuario_0 <- 0;
+	usuario_1 <- 1;
+	usuario_2 <- 2;
+	usuario_3 <- 3;
+	usuario_4 <- 4;
+	// Precio de las peliculas
+	precio_peli_1 <- 20.5;
+	precio_peli_2 <- 30.1;
+	precio_peli_3 <- 25.7;
+	precio_peli_4 <- 15.9;
+	// Peliculas disponibles
+	disponiblePelis_1 <- 2;
+	disponiblePelis_2 <- 3;
+	disponiblePelis_3 <- 4;
+	disponiblePelis_4 <- 2;
+	cantidadPeliculas <- disponiblePelis_1+disponiblePelis_2+disponiblePelis_3+disponiblePelis_4;
+	
+	Repetir
+		Escribir "Bienvenido a la tienda del barrio el Porvenir";
+		Escribir Sin Saltar "Digite su Identificacion para iniciar";
+		Leer identidad;
+		Si identidad = usuario_1 Entonces
+			Si pelis_usuario_1>0 Entonces
+				Escribir '';
+				Escribir 'Hola ',nombreUsuario_1,' proceda a comprar en la tienda';
+				Escribir 'Las peliculas que tienes son: ',pelis_usuario_1;
+				nuevoUsuario <- Verdadero;
+			FinSi
+		SiNo
+			Si identidad = usuario_2 Entonces
+				Si pelis_usuario_2>0 Entonces
+					Escribir '';
+					Escribir 'Hola ',nombreUsuario_2,' proceda a comprar en la tienda';
+					Escribir 'Las peliculas que tienes son: ',pelis_usuario_2;
+					nuevoUsuario <- Verdadero;
+				FinSi
+			SiNo
+				Si identidad = usuario_3 Entonces
+					Si pelis_usuario_3>0 Entonces
+						Escribir '';
+						Escribir 'Hola ',nombreUsuario_3,' proceda a comprar en la tienda';
+						Escribir 'Las peliculas que tienes son: ',pelis_usuario_3;
+						nuevoUsuario <- Verdadero;
+					FinSi
+				SiNo
+					Si identidad = usuario_4 Entonces
+						Si pelis_usuario_4>0 Entonces
+							Escribir '';
+							Escribir 'Hola ',nombreUsuario_4,' proceda a comprar en la tienda';
+							Escribir 'Las peliculas que tienes son: ',pelis_usuario_4;
+							nuevoUsuario <- Verdadero;
+						FinSi
+					SiNo
+						Escribir 'No se encuentra registrado, por favor registrese';
+						nuevoUsuario <- Falso;
+					FinSi
+				FinSi
+			FinSi
+		FinSi
+		Si nuevoUsuario = Falso Entonces
+			Escribir 'Ingrese sus datos';
+			Escribir Sin Saltar 'Ingrese nombre completo';
+			Leer nombreUsuario_0;
+			Repetir
+				Escribir Sin Saltar 'Ingrese identificación';
+				Leer usuario_0;
+				Si usuario_0 = usuario_1 o usuario_0 = usuario_2 o usuario_0 = usuario_3 o usuario_0 = usuario_4 Entonces
+					Escribir 'El usuario ya existe, digite una identificacion diferente';
+				FinSi
+			Hasta Que usuario_0 <> usuario_1 y usuario_0 <> usuario_2 y usuario_0 <> usuario_3 y usuario_0 <> usuario_4
+			identidad <- usuario_0;
+			Escribir Sin Saltar 'Ingrese dirección';
+			Leer direccion;
+			Escribir ' ';
+			Escribir '__________Datos del usuario registrado__________';
+			Escribir 'Nombre: ',nombreUsuario_0;
+			Escribir 'Identificación: ',usuario_0;
+			Escribir 'Dirección: ',direccion;
+			Escribir 'Gracias por su registro proceda a comprar en la tienda';
+		FinSi
+		
+		Escribir '';
+		Escribir 'Menu de opciones';
+		Escribir '1. Alquilar pelicula';
+		Escribir '2. Consultar peliculas disponibles';
+		Escribir '3. Regresar pelicula';
+		Escribir '4. Usuarios registrados';
+		Escribir '5. Ventas del Día';
+		Leer opcion;
+		
+		Segun opcion  Hacer
+			1:
+				Repetir
+					Escribir 'Elegir el tema de las peliculas disponibles';
+					Escribir '1. Acción';
+					Escribir '2. Misterio';
+					Leer opcionPeliculas;
+					Borrar Pantalla;
+					Segun opcionPeliculas  Hacer
+						1:
+							Escribir 'Elegir una de las siguientes peliculas de Acción';
+							Escribir ' ';
+							Escribir '___________________________';
+							Escribir '1. Duro de matar 7';
+							Escribir 'Tema: Acción';
+							Escribir 'Edad mínima: 18+';
+							Escribir 'Duracion: 1:35:20';
+							Escribir 'Precuelas: 6';
+							Escribir 'Precio: ',precio_peli_1,' pesos';
+							Escribir 'Disponibles: ',disponiblePelis_1;
+							Escribir ' ';
+							Escribir '___________________________';
+							Escribir '2. John Wick 4';
+							Escribir 'Tema: Acción';
+							Escribir 'Edad mínima: 18+';
+							Escribir 'Duracion: 1:53:30';
+							Escribir 'Precuelas: 3';
+							Escribir 'Precio: ',precio_peli_2,' pesos';
+							Escribir 'Disponibles: ',disponiblePelis_2;
+							Escribir '___________________________';
+							Escribir '';
+							Repetir
+								Leer opcionPeli;
+								Segun opcionPeli  Hacer
+									1:
+										peli <- 1;
+										precio <- precio_peli_1;
+									2:
+										peli <- 2;
+										precio <- precio_peli_2;
+									De Otro Modo:
+										Escribir 'La opción elegida NO existe';
+								FinSegun
+							Hasta Que opcionPeli = 1 o opcionPeli = 2
+						2:
+							Escribir 'Elegir una de las siguientes peliculas de Misterio';
+							Escribir ' ';
+							Escribir ' ___________________________';
+							Escribir '1. La Causa Perdida';
+							Escribir 'Tema: Misterio';
+							Escribir 'Edad mínima: 10+';
+							Escribir 'Duracion: 1:15:40';
+							Escribir 'Precuelas: 0';
+							Escribir 'Precio: ',precio_peli_3,' pesos';
+							Escribir 'Disponibles: ',disponiblePelis_3;
+							Escribir ' ';
+							Escribir ' ___________________________';
+							Escribir '2. En busca de la respuesta 2';
+							Escribir 'Tema: Misterio';
+							Escribir 'Edad mínima: 12+';
+							Escribir 'Duracion: 1:27:55';
+							Escribir 'Precuelas: 1';
+							Escribir 'Precio: ',precio_peli_4,' pesos';
+							Escribir 'Disponibles: ',disponiblePelis_4;
+							Escribir '___________________________';
+							Escribir '';
+							Repetir
+								Leer opcionPeli;
+								Segun opcionPeli  Hacer
+									1:
+										peli <- 3;
+										precio <- precio_peli_3;
+									2:
+										peli <- 4;
+										precio <- precio_peli_4;
+									De Otro Modo:
+										Escribir 'La opción elegida NO existe';
+								FinSegun
+							Hasta Que opcionPeli = 1 o opcionPeli = 2
+						De Otro Modo:
+							Escribir 'La opción elegida NO existe';
+					FinSegun
+				Hasta Que opcionPeliculas = 1 o opcionPeliculas = 2
+				
+				Repetir
+					Escribir Sin Saltar 'Ingrese la cantidad que desee ordenar:';
+					Leer cantPeliAlquilar;
+				Hasta Que cantPeliAlquilar > 0
+				
+				Si peli=1 Entonces
+					Si disponiblePelis_1 >= cantPeliAlquilar Y disponiblePelis_1 > 0 Entonces
+						disponiblePelis_1 <- disponiblePelis_1 - cantPeliAlquilar;
+						si identidad = usuario_1 Entonces
+							pelis_usuario_1 <- pelis_usuario_1 + cantPeliAlquilar;
+						FinSi
+						si identidad = usuario_2 Entonces
+							pelis_usuario_2 <- pelis_usuario_2 + cantPeliAlquilar;
+						FinSi
+						si identidad = usuario_3 Entonces
+							pelis_usuario_3 <- pelis_usuario_3 + cantPeliAlquilar;
+						FinSi
+						si identidad = usuario_4 Entonces
+							pelis_usuario_4 <- pelis_usuario_4 + cantPeliAlquilar;
+						FinSi
+						si identidad = usuario_0 Entonces
+							pelis_usuario_0 <- pelis_usuario_0 + cantPeliAlquilar;
+						FinSi
+						total_Dia <- total_Dia + precio*cantPeliAlquilar;
+						Escribir cantPeliAlquilar,' und. Duro de matar 7 Alquilada';
+						Escribir 'Valor total del servicio: ',precio*cantPeliAlquilar;
+					SiNo
+						Escribir 'No hay esa cantidad, por favor revisar disponibilidad.';
+					FinSi
+				FinSi
+				
+				Si peli=2 Entonces
+					Si disponiblePelis_2 >= cantPeliAlquilar Y disponiblePelis_2 > 0 Entonces
+						disponiblePelis_2 <- disponiblePelis_2 - cantPeliAlquilar;
+						si identidad = 1 Entonces
+							pelis_usuario_1 <- pelis_usuario_1 + cantPeliAlquilar;
+						FinSi
+						si identidad = 2 Entonces
+							pelis_usuario_2 <- pelis_usuario_2 + cantPeliAlquilar;
+						FinSi
+						si identidad = 3 Entonces
+							pelis_usuario_3 <- pelis_usuario_3 + cantPeliAlquilar;
+						FinSi
+						si identidad = 4 Entonces
+							pelis_usuario_4 <- pelis_usuario_4 + cantPeliAlquilar;
+						FinSi
+						si identidad < 1 o identidad > 4 Entonces
+							pelis_usuario_0 <- pelis_usuario_0 + cantPeliAlquilar;
+						FinSi
+						total_Dia <- total_Dia + precio*cantPeliAlquilar;
+						Escribir 'Valor total del servicio: ',precio*cantPeliAlquilar;
+						Escribir cantPeliAlquilar,' und. John Wick 4 Alquilada';
+					SiNo
+						Escribir 'No hay esa cantidad, por favor revisar disponibilidad.';
+					FinSi
+				FinSi
+				
+				Si peli=3 Entonces
+					Si disponiblePelis_3 >= cantPeliAlquilar Y disponiblePelis_3 > 0 Entonces
+						disponiblePelis_3 <- disponiblePelis_3 - cantPeliAlquilar;
+						si identidad = 1 Entonces
+							pelis_usuario_1 <- pelis_usuario_1 + cantPeliAlquilar;
+						FinSi
+						si identidad = 2 Entonces
+							pelis_usuario_2 <- pelis_usuario_2 + cantPeliAlquilar;
+						FinSi
+						si identidad = 3 Entonces
+							pelis_usuario_3 <- pelis_usuario_3 + cantPeliAlquilar;
+						FinSi
+						si identidad = 4 Entonces
+							pelis_usuario_4 <- pelis_usuario_4 + cantPeliAlquilar;
+						FinSi
+						si identidad < 1 o identidad > 4 Entonces
+							pelis_usuario_0 <- pelis_usuario_0 + cantPeliAlquilar;
+						FinSi
+						total_Dia <- total_Dia + precio*cantPeliAlquilar;
+						Escribir 'Valor total del servicio: ',precio*cantPeliAlquilar;
+						Escribir cantPeliAlquilar,' und. La Causa Perdida Alquilada';
+					SiNo
+						Escribir 'No hay esa cantidad, por favor revisar disponibilidad.';
+					FinSi
+				FinSi
+				
+				Si peli=4 Entonces
+					Si disponiblePelis_4 >= cantPeliAlquilar Y disponiblePelis_4 > 0 Entonces
+						disponiblePelis_4 <- disponiblePelis_4 - cantPeliAlquilar;
+						si identidad = 1 Entonces
+							pelis_usuario_1 <- pelis_usuario_1 + cantPeliAlquilar;
+						FinSi
+						si identidad = 2 Entonces
+							pelis_usuario_2 <- pelis_usuario_2 + cantPeliAlquilar;
+						FinSi
+						si identidad = 3 Entonces
+							pelis_usuario_3 <- pelis_usuario_3 + cantPeliAlquilar;
+						FinSi
+						si identidad = 4 Entonces
+							pelis_usuario_4 <- pelis_usuario_4 + cantPeliAlquilar;
+						FinSi
+						si identidad < 1 o identidad > 4 Entonces
+							pelis_usuario_0 <- pelis_usuario_0 + cantPeliAlquilar;
+						FinSi
+						total_Dia <- total_Dia + precio*cantPeliAlquilar;
+						Escribir 'Valor total del servicio: ',precio*cantPeliAlquilar;
+						Escribir cantPeliAlquilar,' und. En busca de la respuesta 2 Alquilada';
+					SiNo
+						Escribir 'No hay esa cantidad, por favor revisar disponibilidad.';
+					FinSi
+				FinSi				
+				cantidadPeliculas <- cantidadPeliculas + cantPeliAlquilar;
+				
+			2:	
+				Escribir '         Peliculas disponibles';
+				Si disponiblePelis_1>0 Entonces
+					Escribir disponiblePelis_1,' und. Duro de matar 7 ','-Precio: ',precio_peli_1,' pesos';
+				FinSi
+				Si disponiblePelis_2>0 Entonces
+					Escribir disponiblePelis_2,' und. John Wick 4 ','-Precio: ',precio_peli_2,' pesos';
+				FinSi
+				Si disponiblePelis_3>0 Entonces
+					Escribir disponiblePelis_3,' und. La Causa Perdida ','-Precio: ',precio_peli_3,' pesos';
+				FinSi
+				Si disponiblePelis_4>0 Entonces
+					Escribir disponiblePelis_4,' und. En busca de la respuesta 2 ','-Precio: ',precio_peli_4,' pesos';
+				FinSi
+				Escribir 'Total peliculas disponibles: ',cantidadPeliculas;
+				
+			3: 	
+				Escribir '          Peliculas para regresar';
+				Escribir '1.',' Duro de matar 7 ','-Precio: ',precio_peli_1,' pesos';
+				Escribir '2.',' John Wick 4 ','-Precio: ',precio_peli_2,' pesos';
+				Escribir '3.',' La Causa Perdida ','-Precio: ',precio_peli_3,' pesos';
+				Escribir '4.',' En busca de la respuesta 2 ','-Precio: ',precio_peli_4,' pesos';
+				
+				Repetir
+					Escribir Sin Saltar 'Qué pelicula desea entregar?'; leer opcionRegresar;
+				Hasta Que opcionRegresar >= 1 y opcionRegresar <= 4
+				
+				Segun identidad Hacer
+					usuario_1:
+						Repetir
+							Escribir Sin Saltar 'Cuantas peliculas desea entregar:'; leer cantPeliRegresar;
+						Hasta Que cantPeliRegresar <= pelis_usuario_1
+						pelis_usuario_1 <- pelis_usuario_1 - cantPeliRegresar;
+					usuario_2:
+						Repetir
+							Escribir Sin Saltar 'Cuantas peliculas desea entregar:'; leer cantPeliRegresar;
+						Hasta Que cantPeliRegresar <= pelis_usuario_2
+						pelis_usuario_2 <- pelis_usuario_2 - cantPeliRegresar;
+					usuario_3:Repetir
+						Escribir Sin Saltar 'Cuantas peliculas desea entregar:'; leer cantPeliRegresar;
+					Hasta Que cantPeliRegresar <= pelis_usuario_3
+					pelis_usuario_3 <- pelis_usuario_3 - cantPeliRegresar;
+				usuario_4:
+					Repetir
+						Escribir Sin Saltar 'Cuantas peliculas desea entregar:'; leer cantPeliRegresar;
+					Hasta Que cantPeliRegresar <= pelis_usuario_4
+					pelis_usuario_4 <- pelis_usuario_4 - cantPeliRegresar;
+				usuario_0:
+					Repetir
+						Escribir Sin Saltar 'Cuantas peliculas desea entregar:'; leer cantPeliRegresar;
+					Hasta Que cantPeliRegresar <= pelis_usuario_0
+					pelis_usuario_0 <- pelis_usuario_0 - cantPeliRegresar;
+				De Otro Modo:
+					Escribir 'Usuario no existe por la tanto, nunca llegara aquí';
+			FinSegun
+			Segun opcionRegresar Hacer
+				1:
+					disponiblePelis_1 <- disponiblePelis_1 + cantPeliRegresar;
+					Escribir disponiblePelis_1,' und. Duro de matar 7 ','-Precio: ',precio_peli_1,' pesos';
+				2:
+					disponiblePelis_2 <- disponiblePelis_2 + cantPeliRegresar;
+					Escribir disponiblePelis_2,' und. John Wick 4 ','-Precio: ',precio_peli_2,' pesos';
+				3:
+					disponiblePelis_3 <- disponiblePelis_3 + cantPeliRegresar;
+					Escribir disponiblePelis_3,' und. La Causa Perdida ','-Precio: ',precio_peli_3,' pesos';
+				4:
+					disponiblePelis_4 <- disponiblePelis_4 + cantPeliRegresar;
+					Escribir disponiblePelis_4,' und. En busca de la respuesta 2 ','-Precio: ',precio_peli_4,' pesos';
+				De Otro Modo:
+					Escribir 'La opción elegida NO existe';
+			FinSegun
+			cantidadPeliculas <- cantidadPeliculas + cantPeliRegresar;
+			Escribir Sin Saltar 'Desea hacer una nota: '; leer anotacion;
+			
+		4:	
+			Escribir '   Usuarios registrados';
+			Escribir ' ___________________________';
+			Escribir 'Usuario 1';
+			Escribir 'Nombre: ',nombreUsuario_1;
+			Escribir 'Identificion: ',usuario_1;
+			Escribir 'Peliculas que tiene: ',pelis_usuario_1;
+			Escribir ' ___________________________';
+			Escribir 'Usuario 2';
+			Escribir 'Nombre: ',nombreUsuario_2;
+			Escribir 'Identificion: ',usuario_2;
+			Escribir 'Peliculas que tiene: ',pelis_usuario_2;
+			Escribir ' ___________________________';
+			Escribir 'Usuario 3';
+			Escribir 'Nombre: ',nombreUsuario_3;
+			Escribir 'Identificion: ',usuario_3;
+			Escribir 'Peliculas que tiene: ',pelis_usuario_3;
+			Escribir ' ___________________________';
+			Escribir 'Usuario 4';
+			Escribir 'Nombre: ',nombreUsuario_4;
+			Escribir 'Identificion: ',usuario_4;
+			Escribir 'Peliculas que tiene: ',pelis_usuario_4;
+			si usuario_0 <> 0 Entonces
+				Escribir ' ___________________________';
+				Escribir 'Usuario Nuevo';
+				Escribir 'Nombre: ',nombreUsuario_0;
+				Escribir 'Identificion: ',usuario_0;
+				Escribir 'Peliculas que tiene: ',pelis_usuario_0;
+			FinSi
+			Escribir ' ';
+		5:
+			Escribir 'Venta Total del día';
+			Escribir total_Dia,' pesos';
+		De Otro Modo:
+			Escribir 'La opción elegida NO existe';
+		FinSegun
+	
+	Escribir '';
+	Escribir Sin Saltar 'Deseas terminar el dia? (S/N)';
+	Leer terminar;
+	
+	Si terminar='s' O terminar='S' Entonces
+		finalizar <- Verdadero;
+		Escribir '';
+		Escribir 'Total ventas del día';
+		Escribir total_Dia,' pesos';
+		Escribir 'Gracias! Por utilizar este programa!';
+	SiNo
+		//Borrar Pantalla;
+		Escribir 'Nueva operacion:';
+	FinSi
+Hasta Que finalizar
+	
+FinProceso
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>
+      <div class="about-info">
+        <h1 id="elaboral">Punto 5</h1>
+        <div class="container">
+          <div class="label">
+            <h2>Proceso miSaludEnSuba</h2>
+          </div>
+          <div class="content">
+            <pre>
+              <code>
+              Proceso miSaludEnSuba
+                Definir medic,medic_1,medic_2,medic_3,medic_4 Como Caracter;
+                medic <- '';medic_1 <- 'Aspirina';medic_2 <- 'Omeprazol';medic_3 <- 'Paracetamol';medic_4 <- 'Acetaminofén';
+                Definir precioMedic_1,precioMedic_2,precioMedic_3,precioMedic_4 Como Real;
+                precioMedic_1 <- 47.8;precioMedic_2 <- 75.7;precioMedic_3 <- 58.3;precioMedic_4 <- 24.5;
+                Definir CantMedic_1, CantMedic_2,CantMedic_3,CantMedic_4 Como Entero;
+                CantMedic_1 <- 5;CantMedic_2 <- 6;CantMedic_3 <- 8;CantMedic_4 <- 9;
+                Definir CantCaja_1, CantCaja_2,CantCaja_3,CantCaja_4 Como Entero;
+                CantCaja_1 <- 5;CantCaja_2 <- 6;CantCaja_3 <- 8;CantCaja_4 <- 9;
+                Definir terminar Como Caracter;
+                Definir bandera Como Logico;
+                Definir opcionMenu,opcionCompra,cantComprar,cantMediDisponible Como Entero;
+                Definir total_factura,precioComprado Como Real;
+                total_factura <- 0; cantComprar<-0; precioComprado<-0;
+                
+                
+                Repetir
+                  Escribir 'Bienvenido a la Drogueria mi Salud';
+                  Escribir '';
+                  Escribir '   Menu de opciones';
+                  Escribir '1. Compra de productos';
+                  Escribir '2. Consultar precios';
+                  Escribir '3. Devolucion de producto';
+                  Escribir '4. Generar factura';
+                  Leer opcionMenu;
+                  bandera<-Verdadero;
+                  Limpiar Pantalla;
+                  Segun opcionMenu Hacer
+                    1:
+                      Escribir 'Elegir una de las siguientes medicamentos';
+                      Escribir '__________________________';
+                      Escribir '1. ',medic_1;
+                      Escribir 'Sirve: ','Casi para todo';
+                      Escribir 'Unidades en Caja: 16';
+                      Escribir 'Precio: ',precioMedic_1,' pesos';
+                      Escribir 'Disponibles: ',CantMedic_1;
+                      Escribir '__________________________';
+                      Escribir '2. ',medic_2;
+                      Escribir 'Sirve: ','Para la acidez del estomago';
+                      Escribir 'Unidades en Caja: 10';
+                      Escribir 'Precio: ',precioMedic_2,' pesos';
+                      Escribir 'Disponibles: ',CantMedic_2;
+                      Escribir '__________________________';
+                      Escribir '3. ',medic_3;
+                      Escribir 'Sirve: ','Para aliviar el dolor';
+                      Escribir 'Unidades en Caja: 8';
+                      Escribir 'Precio: ',precioMedic_3,' pesos';
+                      Escribir 'Disponibles: ',CantMedic_3;
+                      Escribir '__________________________';
+                      Escribir '4. ',medic_4;
+                      Escribir 'Sirve: ','Para el dolor ligero o moderado';
+                      Escribir 'Unidades en Caja: 6';
+                      Escribir 'Precio: ',precioMedic_4,' pesos';
+                      Escribir 'Disponibles: ',CantMedic_4;
+                      Escribir '__________________________';
+                      Escribir Sin Saltar 'Eliga el producto a comprar';Leer opcionCompra;
+                      Repetir
+                        Escribir Sin Saltar 'Ingrese la cantidad que desee comprar:';Leer cantComprar;
+                      Hasta Que cantComprar > 0
+                      Limpiar Pantalla;
+                      Segun opcionCompra Hacer
+                        1:
+                          medic <- medic_1;
+                          cantMediDisponible <- CantMedic_1;
+                          precioComprado <- precioMedic_1;
+                        2:
+                          medic <- medic_2;
+                          cantMediDisponible <- CantMedic_2;
+                          precioComprado <- precioMedic_2;
+                        3:
+                          medic <- medic_3;
+                          cantMediDisponible <- CantMedic_3;
+                          precioComprado <- precioMedic_3;
+                        4:
+                          medic <- medic_4;
+                          cantMediDisponible <- CantMedic_4;
+                          precioComprado <- precioMedic_4;
+                        De Otro Modo:
+                          Escribir 'La opcion no es valida';
+                          bandera <- Falso;
+                      FinSegun
+                      Si cantMediDisponible >= cantComprar y bandera Entonces
+                        total_factura <- total_factura + cantComprar*precioComprado;
+                        Segun opcionCompra Hacer
+                          1:
+                            CantMedic_1 <- CantMedic_1 - cantComprar;
+                          2:
+                            CantMedic_2 <- CantMedic_2 - cantComprar;
+                          3:
+                            CantMedic_3 <- CantMedic_3 - cantComprar;
+                          4:
+                            CantMedic_4 <- CantMedic_4 - cantComprar;	
+                          De Otro Modo:
+                            escribir Sin Saltar '';
+                        FinSegun
+                        Escribir 'El medicamento ',medic,' fue añadido a la facura.';
+                        Escribir 'La compra tiene un valor de: ',total_factura,' pesos';
+                      SiNo
+                        Escribir 'No hay esa cantidad, por favor revisar disponibilidad.';
+                      FinSi
+                    2:
+                      Escribir 'Los precios son los siguientes';
+                      Escribir '__________________________';
+                      Escribir '1. ',medic_1;
+                      Escribir 'Sirve: ','Casi para todo';
+                      Escribir 'Unidades en Caja: 16';
+                      Escribir 'Precio: ',precioMedic_1,' pesos';
+                      Escribir 'Disponibles: ',CantMedic_1;
+                      Escribir '__________________________';
+                      Escribir '2. ',medic_2;
+                      Escribir 'Sirve: ','Para la acidez del estomago';
+                      Escribir 'Unidades en Caja: 10';
+                      Escribir 'Precio: ',precioMedic_2,' pesos';
+                      Escribir 'Disponibles: ',CantMedic_2;
+                      Escribir '__________________________';
+                      Escribir '3. ',medic_3;
+                      Escribir 'Sirve: ','Para aliviar el dolor';
+                      Escribir 'Unidades en Caja: 8';
+                      Escribir 'Precio: ',precioMedic_3,' pesos';
+                      Escribir 'Disponibles: ',CantMedic_3;
+                      Escribir '__________________________';
+                      Escribir '4. ',medic_4;
+                      Escribir 'Sirve: ','Para el dolor ligero o moderado';
+                      Escribir 'Unidades en Caja: 6';
+                      Escribir 'Precio: ',precioMedic_4,' pesos';
+                      Escribir 'Disponibles: ',CantMedic_4;
+                      Escribir '__________________________';
+                    3:
+                      Escribir 'Elegir el medicamento a devolver';
+                      Escribir '__________________________';
+                      Escribir '1. ',medic_1;
+                      Escribir 'Sirve: ','Casi para todo';
+                      Escribir 'Unidades en Caja: 16';
+                      Escribir 'Precio: ',precioMedic_1,' pesos';
+                      Escribir 'Disponibles: ',CantMedic_1;
+                      Escribir '__________________________';
+                      Escribir '2. ',medic_2;
+                      Escribir 'Sirve: ','Para la acidez del estomago';
+                      Escribir 'Unidades en Caja: 10';
+                      Escribir 'Precio: ',precioMedic_2,' pesos';
+                      Escribir 'Disponibles: ',CantMedic_2;
+                      Escribir '__________________________';
+                      Escribir '3. ',medic_3;
+                      Escribir 'Sirve: ','Para aliviar el dolor';
+                      Escribir 'Unidades en Caja: 8';
+                      Escribir 'Precio: ',precioMedic_3,' pesos';
+                      Escribir 'Disponibles: ',CantMedic_3;
+                      Escribir '__________________________';
+                      Escribir '4. ',medic_4;
+                      Escribir 'Sirve: ','Para el dolor ligero o moderado';
+                      Escribir 'Unidades en Caja: 6';
+                      Escribir 'Precio: ',precioMedic_4,' pesos';
+                      Escribir 'Disponibles: ',CantMedic_4;
+                      Escribir '__________________________';
+                      Escribir Sin Saltar 'Eliga el producto a devolver';Leer opcionCompra;
+                      Repetir
+                        Escribir Sin Saltar 'Ingrese la cantidad que desee devolver:';Leer cantComprar;
+                      Hasta Que cantComprar > 0
+                      Limpiar Pantalla;
+                      Segun opcionCompra Hacer
+                        1:
+                          medic <- medic_1;
+                          cantMediDisponible <- CantMedic_1;
+                          precioComprado <- precioMedic_1;
+                        2:
+                          medic <- medic_2;
+                          cantMediDisponible <- CantMedic_2;
+                          precioComprado <- precioMedic_2;
+                        3:
+                          medic <- medic_3;
+                          cantMediDisponible <- CantMedic_3;
+                          precioComprado <- precioMedic_3;
+                        4:
+                          medic <- medic_4;
+                          cantMediDisponible <- CantMedic_4;
+                          precioComprado <- precioMedic_4;
+                        De Otro Modo:
+                          Escribir 'La opcion no es valida';
+                          bandera <- Falso;
+                      FinSegun
+                      Si bandera Entonces
+                        total_factura <- total_factura - cantComprar*precioComprado;
+                        Segun opcionCompra Hacer
+                          1:
+                            CantMedic_1 <- CantMedic_1 + cantComprar;
+                          2:
+                            CantMedic_2 <- CantMedic_2 + cantComprar;
+                          3:
+                            CantMedic_3 <- CantMedic_3 + cantComprar;
+                          4:
+                            CantMedic_4 <- CantMedic_4 + cantComprar;	
+                          De Otro Modo:
+                            escribir Sin Saltar '';
+                        FinSegun
+                        Escribir 'El medicamento ',medic,' fue devuelto exitosamente.';
+                        Escribir 'La devolucion le retorna un valor de: ',cantComprar*precioComprado,' pesos';
+                      SiNo
+                        Escribir 'No hay esa cantidad, por favor revisar disponibilidad.';
+                      FinSi
+                    4:
+                      Si medic <> '' Entonces
+                        Escribir '';
+                        Escribir 'Total en factura';
+                        Escribir 'Medicamento: ',medic;
+                        Escribir 'Cantidad: ',cantComprar;
+                        Escribir 'Precio: ',precioComprado;
+                        Escribir total_factura,' pesos';
+                      SiNo
+                        Escribir 'No se ha generado ninguna compra'; Escribir '';
+                      FinSi
+                      
+                    De Otro Modo:
+                      Escribir 'La opcion no es valida';
+                  FinSegun
+                  
+                  Escribir ''; Escribir Sin Saltar 'Deseas salir de la drogeria? (S/N)';Leer terminar;
+                    Si terminar='s' O terminar='S' Entonces
+                    Escribir '';
+                    Escribir 'Total en factura';
+                    Escribir total_factura,' pesos';
+                    Escribir 'Gracias! Por comprar en mi Salud!';
+                  SiNo
+                    Borrar Pantalla;
+                    Escribir 'Nueva operacion:';
+                  FinSi
+                Hasta Que terminar = 's' o terminar = 'S'
+              FinProceso
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>
+      <div class="about-info">
+        <h1 id="erealizados">Punto 6</h1>
+        <div class="container">
+          <div class="label">
+            <h2>Proceso elMaquinista</h2>
+          </div>
+          <div class="content">
+            <pre>
+              <code>
+              Proceso elMaquinista
+                Definir Usuario_1,Usuario_2,Usuario_3 Como Caracter;
+                Usuario_1 <- 'Julio'; Usuario_2 <- 'Yelenis'; Usuario_3 <- 'Juel';
+                Definir registroIngreso_1,registroSalida_1,registroArreglos_1,registroIngreso_2,registroSalida_2,registroArreglos_2 Como Caracter;
+                Definir terminar,salirRegistros,registroIngreso_3,registroSalida_3,registroArreglos_3 Como Caracter;
+                Definir opcionMenu, opcionUsuario Como Entero;
+                registroIngreso_1<-'';registroIngreso_2<-'';registroIngreso_3<-'';
+                registroSalida_1<-'';registroSalida_2<-'';registroSalida_3<-'';
+                registroArreglos_1<-'';registroArreglos_2<-'';registroArreglos_3<-'';
+                Repetir
+                  Escribir 'Bienvenido al taller El Maquinista';
+                  Escribir '';
+                  Escribir '       Menu de opciones';
+                  Escribir '1. Registro de ingreso al taller';
+                  Escribir '2. Registro salida del taller';
+                  Escribir '3. Registro arreglos realizados';
+                  Escribir '4. Mostrar registros de las motos';
+                  Leer opcionMenu;
+                  Limpiar Pantalla;
+                  Segun opcionMenu Hacer
+                    1:
+                      Escribir 'Elegir una de los siguientes usuarios';
+                      Escribir '__________________________';
+                      Escribir '1. ',Usuario_1;
+                      Escribir 'Moto: MT-D3';
+                      Escribir 'Marca: Yamaha';
+                      Escribir '__________________________';
+                      Escribir '2. ',Usuario_2;
+                      Escribir 'Moto: GSXS 750';
+                      Escribir 'Marca: Suzuki';
+                      Escribir '__________________________';
+                      Escribir '3. ',Usuario_3;
+                      Escribir 'Moto: CB 650';
+                      Escribir 'Marca: Honda';
+                      Escribir '__________________________';
+                      Repetir
+                        Escribir Sin Saltar 'Digite el usuario a registarar'; leer opcionUsuario;
+                        Segun opcionUsuario Hacer
+                          1:
+                            Escribir Sin Saltar 'Digite el registro de ingreso:'; Leer registroIngreso_1;
+                          2:
+                            Escribir Sin Saltar 'Digite el registro de ingreso:'; Leer registroIngreso_2;
+                          3:
+                            Escribir Sin Saltar 'Digite el registro de ingreso:'; Leer registroIngreso_3;
+                        FinSegun
+                        
+                      Hasta Que registroIngreso_1 <> '' o registroIngreso_2 <> '' o registroIngreso_3 <> ''
+                      Limpiar Pantalla;
+                    2:
+                      Escribir 'Elegir una de los siguientes usuarios';
+                      Escribir '__________________________';
+                      Escribir '1. ',Usuario_1;
+                      Escribir 'Moto: MT-D3';
+                      Escribir 'Marca: Yamaha';
+                      Escribir '__________________________';
+                      Escribir '2. ',Usuario_2;
+                      Escribir 'Moto: GSXS 750';
+                      Escribir 'Marca: Suzuki';
+                      Escribir '__________________________';
+                      Escribir '3. ',Usuario_3;
+                      Escribir 'Moto: CB 650';
+                      Escribir 'Marca: Honda';
+                      Escribir '__________________________';
+                      Repetir
+                        Escribir Sin Saltar 'Digite el usuario a registarar'; leer opcionUsuario;
+                        Segun opcionUsuario Hacer
+                          1:
+                            Escribir Sin Saltar 'Digite el registro de Salida:'; Leer registroSalida_1;
+                          2:
+                            Escribir Sin Saltar 'Digite el registro de Salida:'; Leer registroSalida_2;
+                          3:
+                            Escribir Sin Saltar 'Digite el registro de Salida:'; Leer registroSalida_3;
+                        FinSegun
+                        
+                      Hasta Que registroSalida_1 <> '' o registroSalida_2 <> '' o registroSalida_3 <> ''
+                      Limpiar Pantalla;
+                      
+                    3:
+                      Escribir 'Elegir una de los siguientes usuarios';
+                      Escribir '__________________________';
+                      Escribir '1. ',Usuario_1;
+                      Escribir 'Moto: MT-D3';
+                      Escribir 'Marca: Yamaha';
+                      Escribir '__________________________';
+                      Escribir '2. ',Usuario_2;
+                      Escribir 'Moto: GSXS 750';
+                      Escribir 'Marca: Suzuki';
+                      Escribir '__________________________';
+                      Escribir '3. ',Usuario_3;
+                      Escribir 'Moto: CB 650';
+                      Escribir 'Marca: Honda';
+                      Escribir '__________________________';
+                      Repetir
+                        Escribir Sin Saltar 'Digite el usuario a registarar'; leer opcionUsuario;
+                        Segun opcionUsuario Hacer
+                          1:
+                            Escribir Sin Saltar 'Digite el registro de Arreglos:'; Leer registroArreglos_1;
+                          2:
+                            Escribir Sin Saltar 'Digite el registro de Arreglos:'; Leer registroArreglos_2;
+                          3:
+                            Escribir Sin Saltar 'Digite el registro de Arreglos:'; Leer registroArreglos_3;
+                        FinSegun
+                      Hasta Que registroArreglos_1 <> '' o registroArreglos_2 <> '' o registroArreglos_3 <> ''
+                      Limpiar Pantalla;
+                              
+                    4:
+                      Escribir 'Elegir una de los siguientes usuarios';
+                      Escribir '__________________________';
+                      Escribir '1. ',Usuario_1;
+                      Escribir 'Moto: MT-D3';
+                      Escribir 'Marca: Yamaha';
+                      Escribir '__________________________';
+                      Escribir '2. ',Usuario_2;
+                      Escribir 'Moto: GSXS 750';
+                      Escribir 'Marca: Suzuki';
+                      Escribir '__________________________';
+                      Escribir '3. ',Usuario_3;
+                      Escribir 'Moto: CB 650';
+                      Escribir 'Marca: Honda';
+                      Escribir '__________________________';
+                      
+                      Repetir
+                        Escribir Sin Saltar 'Digite el usuario a mostrar '; leer opcionUsuario;
+                        Segun opcionUsuario Hacer
+                          1:
+                            Escribir 'El registro de ingreso:',registroIngreso_1;
+                            Escribir 'El registro de Salida:',registroSalida_1;
+                            Escribir 'El registro de Arreglos:',registroArreglos_1;
+                          2:
+                            Escribir 'El registro de ingreso:',registroIngreso_2;
+                            Escribir 'El registro de Salida:',registroSalida_2;
+                            Escribir 'El registro de Arreglos:',registroArreglos_2;
+                          3:
+                            Escribir 'El registro de ingreso:',registroIngreso_3;
+                            Escribir 'El registro de Salida:',registroSalida_3;
+                            Escribir 'El registro de Arreglos:',registroArreglos_3;
+                          De Otro Modo:
+                            Escribir 'El usuario no existe'; Escribir '';
+                        FinSegun
+                      Hasta Que opcionUsuario =1 o opcionUsuario =2 o opcionUsuario =3
+                      
+                    De Otro Modo:
+                      Escribir 'La opcion no es valida';
+                  FinSegun
+                  
+                  Escribir '';
+                  Escribir Sin Saltar 'Deseas salir del taller (S/N) '; Leer terminar;
+                  Si terminar='s' O terminar='S' Entonces
+                    Escribir '';
+                    Escribir 'Gracias! Por elegirnos taller El Maquinista!';
+                  SiNo
+                    Borrar Pantalla;
+                    Escribir '';
+                  FinSi
+                Hasta Que terminar = 's' o terminar = 'S'
+              FinProceso
+              </code>
+            </pre>
+          </div>
+        </div>
+        <br>
+      </div>
+      <div class="about-info">
+        <h1 id="elaboral">Punto 7</h1>
+        <div class="container">
+          <div class="label">
+            <h2>Proceso indiceMasaCorporal</h2>
+          </div>
+          <div class="content">
+            <pre>
+              <code>
+                Proceso indiceMasaCorporal
+                Definir terminar Como Caracter;
+                Definir peso, estatura, imc Como Real;
+                Repetir
+                Escribir 'Calculo de IMC';
+                Escribir Sin Saltar 'Digite su estarura (mt):'; Leer estatura;
+                Escribir Sin Saltar 'Digite su peso (Kg):'; Leer peso;
+                //El IMC es el peso de una persona en kilogramos dividido por el cuadrado de la estatura en metros
+                imc <- peso/(estatura*estatura);
+                Escribir 'Su indice de masa corporal es: ',imc;
+                
+                Si imc < 18.5 Entonces
+                  Escribir 'Su indice de masa corporal es: Bajo peso';
+                FinSi
+                si imc >= 18.5 y 24.9 >= imc Entonces
+                  Escribir 'Su indice de masa corporal es: Normal';
+                FinSi
+                si imc >= 25.0 y 29.9 >= imc Entonces
+                  Escribir 'Su indice de masa corporal es: Sobrepeso';
+                FinSi
+                si imc >= 30 Entonces
+                  Escribir 'Su indice de masa corporal es: Obeso';
+                FinSi
+                Escribir '';
+                Escribir Sin Saltar 'Deseas salir del programa (S/N) '; Leer terminar;
+                Si terminar='s' O terminar='S' Entonces
+                  Escribir '';
+                  Escribir 'Gracias!!';
+                SiNo
+                  
+                  Escribir '';
+                FinSi
+              Hasta Que terminar = 's' o terminar = 'S'
+              FinProceso
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>
+      <div class="about-info">
+        <h1 id="erealizados">Punto 8</h1>
+        <div class="container">
+          <div class="label">
+            <h2>Proceso Tortas_8</h2>
+          </div>
+          <div class="content">
+            <pre>
+              <code>
+              Proceso Tortas_8
+                Definir opcion,opcionSabor,opcionTorta,identificacion,cantidadTorta,total_Dia Como Entero;
+                Definir sabor,torta,decoracion Como Caracter;
+                Definir nombrecompleto,direccion,terminar Como Caracter;
+                Definir Almacen,finalizar Como Logico;
+                Almacen <- Verdadero;
+                finalizar <- Falso;
+                Definir cantNutella,cantMousse,cantFresa,cantAlmendra Como Entero;
+                Definir precio,precioNutella,precioMousse,precioFresa,precioAlmendra Como Real;
+                // venta inicial del dia
+                total_Dia <- 100;
+                // chocolate
+                cantNutella <- 1;
+                cantMousse <- 6;
+                // vainilla
+                cantFresa <- 2;
+                cantAlmendra <- 3;
+                // precio de las tortas
+                precioNutella <- 10;
+                precioMousse <- 70;
+                precioFresa <- 20;
+                precioAlmendra <- 30;
+                Repetir
+                  Escribir '1. Establecer pedido';
+                  Escribir '2. Tortas disponibles';
+                  Escribir '3. Ventas del Día';
+                  Leer opcion;
+                  
+                  Segun opcion  Hacer
+                    1:
+                      Escribir 'Elegir uno de los sabores';
+                      Escribir '1. Chocolate';
+                      Escribir '2. Vainilla';
+                      Leer opcionSabor;
+                      Borrar Pantalla;
+                      
+                      Segun opcionSabor  Hacer
+                        1:
+                          Escribir 'Elegir una de las siguientes tortas de Chocolate';
+                          Escribir ' ';
+                          Escribir '1. Torta de Nutella';
+                          Escribir '__________________________';
+                          Escribir 'Sabor: Chocolate';
+                          Escribir 'Relleno: Arequipe y leche condensada';
+                          Escribir 'Decoracion: Cacahuates';
+                          Escribir 'Porciones: 18';
+                          Escribir 'Precio: ',precioNutella,' pesos';
+                          Escribir 'Disponibles: ',cantNutella;
+                          Escribir ' ';
+                          Escribir '2. Torta Mousse';
+                          Escribir '__________________________';
+                          Escribir 'Sabor: Chocolate';
+                          Escribir 'Relleno: Ganache';
+                          Escribir 'Decoracion: Geometrico';
+                          Escribir 'Porciones: 12';
+                          Escribir 'Precio : ',precioMousse,' pesos';
+                          Escribir 'Disponibles: ',cantMousse;
+                          Escribir '';
+                          Leer opcionTorta;
+                          // Limpiar Pantalla
+                          Segun opcionTorta  Hacer
+                            1:
+                              torta <- 'Torta de Nutella';
+                              precio <- precioNutella;
+                            2:
+                              torta <- 'Torta Mousse';
+                              precio <- precioNutella;
+                            De Otro Modo:
+                              Escribir 'La opción elegida NO existe';
+                          FinSegun
+                        2:
+                          Escribir 'Elegir una de las siguientes tortas de Vainilla';
+                          Escribir ' ';
+                          Escribir '1. Torta de Fresa';
+                          Escribir ' __________________________';
+                          Escribir 'Sabor: Vainilla';
+                          Escribir 'Relleno: Fresa';
+                          Escribir 'Decoracion: Frutal';
+                          Escribir 'Porciones: 12';
+                          Escribir 'Precio: ',precioFresa,' pesos';
+                          Escribir 'Disponibles: ',cantFresa;
+                          Escribir ' ';
+                          Escribir '2. Torta de Almendra';
+                          Escribir ' __________________________';
+                          Escribir 'Sabor: Vainilla';
+                          Escribir 'Relleno: Manjar blanco';
+                          Escribir 'Decoracion: Azucar moreno';
+                          Escribir 'Porciones: 30';
+                          Escribir 'Precio: ',precioAlmendra,' pesos';
+                          Escribir 'Disponibles: ',cantAlmendra;
+                          Escribir '';
+                          Leer opcionTorta;
+                          // Limpiar Pantalla
+                          Segun opcionTorta  Hacer
+                            1:
+                              torta <- 'Torta de Fresa';
+                              precio <- precioFresa;
+                            2:
+                              torta <- 'Torta de Almendra';
+                              precio <- precioAlmendra;
+                            De Otro Modo:
+                              Escribir 'La opción elegida NO existe';
+                          FinSegun
+                        De Otro Modo:
+                          Escribir 'La opción elegida NO existe';
+                      FinSegun
+                      
+                      Escribir 'Ingrese la cantidad que desee ordenar:';
+                      Leer cantidadTorta;
+                      
+                      Si torta='Torta de Nutella' Entonces
+                        Si cantNutella>=cantidadTorta Y cantidadTorta>0 Entonces
+                          cantNutella <- cantNutella-cantidadTorta;
+                          Almacen <- Verdadero;
+                        SiNo
+                          Escribir 'No hay esa cantidad, por favor revisar disponibilidad.';
+                          Almacen <- Falso;
+                        FinSi
+                      SiNo
+                        Si torta='Torta Mousse' Entonces
+                          Si cantMousse>=cantidadTorta Y cantidadTorta>0 Entonces
+                            cantMousse <- cantMousse-cantidadTorta;
+                            Almacen <- Verdadero;
+                          SiNo
+                            Escribir 'No hay esa cantidad, por favor revisar disponibilidad.';
+                            Almacen <- Falso;
+                          FinSi
+                        SiNo
+                          Si torta='Torta de Fresa' Entonces
+                            Si cantFresa>=cantidadTorta Y cantidadTorta>0 Entonces
+                              cantFresa <- cantFresa-cantidadTorta;
+                              Almacen <- Verdadero;
+                            SiNo
+                              Escribir 'No hay esa cantidad, por favor revisar disponibilidad.';
+                              Almacen <- Falso;
+                            FinSi
+                          SiNo
+                            Si torta='Torta de Almendra' Entonces
+                              Si cantAlmendra>=cantidadTorta Y cantidadTorta>0 Entonces
+                                cantAlmendra <- cantAlmendra-cantidadTorta;
+                                Almacen <- Verdadero;
+                              SiNo
+                                Escribir 'No hay esa cantidad, por favor revisar disponibilidad.';
+                                Almacen <- Falso;
+                              FinSi
+                            FinSi
+                          FinSi
+                        FinSi
+                      FinSi
+                      
+                      Si Almacen Entonces
+                        Escribir 'Ingrese sus datos';
+                        Escribir 'Ingrese nombre completo';
+                        Leer nombrecompleto;
+                        Escribir 'Ingrese identificación';
+                        Leer identificacion;
+                        Escribir 'Ingrese dirección';
+                        Leer direccion;
+                        Escribir ' ';
+                        Escribir '__________Detalle de la Compra__________';
+                        Escribir 'Comprador: ',nombrecompleto;
+                        Escribir 'Id: ',identificacion;
+                        Escribir 'Dirección: ',direccion;
+                        Escribir 'Cantidad de tortas: ',cantidadTorta,' ',torta,' -Precio por und: ',precio,' pesos';
+                        Escribir 'Total del pedido: ',cantidadTorta*precio;
+                        Escribir 'Favor de realizar el pago en la caja para hacer la entrega';
+                        precio <- precio*cantidadTorta;
+                        total_Dia <- total_Dia+precio;
+                      FinSi
+                    2:
+                      Escribir 'Tortas disponibles';
+                      Si cantNutella>0 Entonces
+                        Escribir cantNutella,' und. Torta de Nutella ',precioNutella,' pesos';
+                      FinSi
+                      Si cantMousse>0 Entonces
+                        Escribir cantMousse,' und. Torta Mousse ',precioMousse,' pesos';
+                      FinSi
+                      Si cantFresa>0 Entonces
+                        Escribir cantFresa,' und. Torta de Fresa ',precioFresa,' pesos';
+                      FinSi
+                      Si cantAlmendra>0 Entonces
+                        Escribir cantAlmendra,' und. Torta de Almendra ',precioAlmendra,' pesos';
+                      FinSi
+                    3:
+                      Escribir 'Venta Total del día';
+                      Escribir total_Dia,' pesos';
+                    De Otro Modo:
+                      Escribir 'La opción elegida NO existe';
+                  FinSegun
+                  
+                  Escribir '';
+                  Escribir 'Deseas terminar el dia? (S/N)';
+                  Leer terminar;
+                  
+                  Si terminar='s' O terminar='S' Entonces
+                    finalizar <- Verdadero;
+                    Escribir '';
+                    Escribir 'Total ventas del día';
+                    Escribir total_Dia,' pesos';
+                    Escribir 'Gracias! Por utilizar este programa!';
+                  SiNo
+                    Borrar Pantalla;
+                    Escribir 'Elige la operacion que deseas realizar:';
+                  FinSi
+                Hasta Que finalizar
+              FinProceso
+              </code>
+            </pre>
+          </div>
+        </div>
+        <br>
+      </div>
+      <div class="about-info">
+        <h1 id="elaboral">Punto 9</h1>
+        <div class="container">
+          <div class="label">
+            <h2>Proceso profesorMatematica</h2>
+          </div>
+          <div class="content">
+            <pre>
+              <code>
+              Proceso profesorMatematica
+                Definir altura,ancho,base,respuesta Como Real;
+                Definir opcionMenu Como Entero;
+                
+                Escribir 'Calcular el area ';
+                Escribir '1. Rectangulo';
+                Escribir '2. Triangulo';
+                Escribir '3. Trapecio';
+                Escribir Sin Saltar 'Elija la figura: '; leer opcionMenu;
+                Segun opcionMenu Hacer
+                  1:
+                    Escribir Sin Saltar 'Digite el primer lado del Rectangulo:'; leer altura;
+                    Escribir Sin Saltar 'Digite el segundo lado del Rectangulo:'; leer ancho;
+                    respuesta <- altura*ancho;
+                    Escribir 'El area del rectagulo es: ',respuesta;
+                    Escribir '';
+                  2:
+                    Escribir Sin Saltar 'Digite la altura del triangulo:'; leer altura;
+                    Escribir Sin Saltar 'Digite la base del triangulo:'; leer base;
+                    respuesta <- altura*base/2;
+                    Escribir 'El area del triangulo es: ',respuesta;
+                    Escribir '';
+                  3:
+                    Escribir Sin Saltar 'Digite la base mayor del trapecio:'; leer base;
+                    Escribir Sin Saltar 'Digite la base menor del trapecio:'; leer ancho;
+                    Escribir Sin Saltar 'Digite la altura del trapecio:'; leer altura;
+                    respuesta <- ((base+ancho)*altura)/2;
+                    Escribir 'El area del triangulo es: ',respuesta;
+                    Escribir '';
+                  De Otro Modo:
+                    Escribir 'La opcion no existe, por favor digite una de las disponibles.';
+                FinSegun
+                
+                
+              FinProceso
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>
+      <div class="about-info">
+        <h1 id="elaboral">Punto 10</h1>
+        <div class="container">
+          <div class="label">
+            <h2>Proceso suBancoFiel</h2>
+          </div>
+          <div class="content">
+            <pre>
+              <code>
+              Proceso suBancoFiel
+                Definir titular_1,titular_2,titular_3,terminar Como Caracter;
+                Definir opcionMenu, opcionUsuario Como Entero;
+                Definir cantidadTitular_1,cantidadTitular_2,cantidadTitular_3, movimiento Como Real;
+                cantidadTitular_1<-300;cantidadTitular_2<-250;cantidadTitular_3<-289;
+                titular_1 <- 'Julio'; titular_2 <- 'Yelenis'; titular_3 <- 'Juel';
+                Repetir
+                  Escribir 'Bienvenido a Su Banco Fiel';
+                  Escribir '';
+                  Escribir '       Menu de opciones';
+                  Escribir '1. Realizar un Ingreso';
+                  Escribir '2. Realizar un Retiro';
+                  Escribir '3. Realizar una consulta';
+                  Leer opcionMenu;
+                  Limpiar Pantalla;
+                  Escribir 'Elegir una de los siguientes usuarios';
+                  Escribir '__________________________';
+                  Escribir '1. ',titular_1;
+                  Escribir '__________________________';
+                  Escribir '2. ',titular_2;
+                  Escribir '__________________________';
+                  Escribir '3. ',titular_3;
+                  Escribir '__________________________';
+                  
+                  Segun opcionMenu Hacer
+                    1:
+                      
+                      Repetir
+                        Escribir Sin Saltar 'Digite el usuario a ingresar'; leer opcionUsuario;
+                        Segun opcionUsuario Hacer
+                          1:
+                            Escribir Sin Saltar 'Digite la cantidad que desea ingresar:'; Leer movimiento;
+                            si movimiento > 0 Entonces
+                              cantidadTitular_1 <- CantidadTitular_1 + movimiento;
+                              Escribir 'Nueva Cantidad: ',cantidadTitular_1;
+                            SiNo
+                              Escribir 'La cantidad debe ser superior a cero';
+                            FinSi
+                          2:
+                            Escribir Sin Saltar 'Digite la cantidad que desea ingresar:'; Leer movimiento;
+                            si movimiento > 0 Entonces
+                              cantidadTitular_2 <- CantidadTitular_2 + movimiento;
+                              Escribir 'Nueva Cantidad: ',cantidadTitular_2;
+                            SiNo
+                              Escribir 'La cantidad debe ser superior a cero';
+                            FinSi
+                          3:
+                            Escribir Sin Saltar 'Digite la cantidad que desea ingresar:'; Leer movimiento;
+                            si movimiento > 0 Entonces
+                              cantidadTitular_3 <- CantidadTitular_3 + movimiento;
+                              Escribir 'Nueva Cantidad: ',cantidadTitular_3;
+                            SiNo
+                              Escribir 'La cantidad debe ser superior a cero';
+                            FinSi
+                        FinSegun
+                      Hasta Que opcionUsuario >0 y 4 >opcionUsuario
+                      
+                    2:
+                      Repetir
+                        Escribir Sin Saltar 'Digite el usuario que desea retirar'; leer opcionUsuario;
+                        Segun opcionUsuario Hacer
+                          1:
+                            Escribir Sin Saltar 'Digite la cantidad que desea retirar:'; Leer movimiento;
+                            si movimiento <= cantidadTitular_1 Entonces
+                              cantidadTitular_1 <- CantidadTitular_1 - movimiento;
+                              Escribir 'Nueva Cantidad: ',cantidadTitular_1;
+                            SiNo
+                              Escribir 'La cantidad supera la disponible';
+                            FinSi
+                          2:
+                            Escribir Sin Saltar 'Digite la cantidad que desea retirar:'; Leer movimiento;
+                            si movimiento <= cantidadTitular_2 Entonces
+                              cantidadTitular_2 <- CantidadTitular_2 - movimiento;
+                              Escribir 'Nueva Cantidad: ',cantidadTitular_2;
+                            SiNo
+                              Escribir 'La cantidad supera la disponible';
+                            FinSi
+                          3:
+                            Escribir Sin Saltar 'Digite la cantidad que desea retirar:'; Leer movimiento;
+                            si movimiento <= cantidadTitular_3 Entonces
+                              cantidadTitular_3 <- CantidadTitular_3 - movimiento;
+                              Escribir 'Nueva Cantidad: ',cantidadTitular_3;
+                            SiNo
+                              Escribir 'La cantidad supera la disponible';
+                            FinSi
+                        FinSegun
+                        
+                      Hasta Que opcionUsuario >0 y 4 >opcionUsuario
+                      
+                      
+                    3:
+                      Repetir
+                        Escribir Sin Saltar 'Digite el usuario a consultar'; leer opcionUsuario;
+                        Segun opcionUsuario Hacer
+                          1:
+                            Escribir '__________________________';
+                            Escribir '1. ',titular_1;
+                            Escribir 'Id: 1';
+                            Escribir 'Cantidad: ',cantidadTitular_1;
+                            Escribir '__________________________';
+                          2:
+                            Escribir '__________________________';
+                            Escribir '2. ',titular_2;
+                            Escribir 'Id: 2';
+                            Escribir 'Cantidad: ',cantidadTitular_2;
+                            Escribir '__________________________';
+                          3:
+                            Escribir '__________________________';
+                            Escribir '3. ',titular_3;
+                            Escribir 'Id: 3';
+                            Escribir 'Cantidad: ',cantidadTitular_3;
+                            Escribir '__________________________';
+                        FinSegun
+                      Hasta Que opcionUsuario >0 y 4 >opcionUsuario
+                    De Otro Modo:
+                      Escribir 'La opcion no es valida';
+                  FinSegun
+                  
+                  Escribir '';
+                  Escribir Sin Saltar 'Deseas salir del taller (S/N) '; Leer terminar;
+                  Si terminar='s' O terminar='S' Entonces
+                    Escribir '';
+                    Escribir 'Gracias! Por elegirnos taller El Maquinista!';
+                  SiNo
+                    Borrar Pantalla;
+                    Escribir '';
+                  FinSi
+                Hasta Que terminar = 's' o terminar = 'S' 
+              FinProceso
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="portfolio" id="portfolio">
+    <div class="portfolio-heading">
+      <h2>Mi Portafolio</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="container">
+      <div class="card">
+        <div class="card__img">
+        </div>
+        <div class="card__title">
+          <h2>Taller PSeInt #1</h2>
+        </div>
+        <div class="card__proyect-links">
+          <a href="https://github.com/VasquezJulioe/ControlGithub/tree/taller1" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="taller1.html">
+            <i class="fas fa-globe-asia"></i>
+          </a>
+          <a href="https://youtu.be/g6SQvovZs4k" target="_blank">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+        <div class="button-content">
+          <button class="project-details-button download-cv">
+            <a href="taller1.html">Detalles del Proyecto</a>
+          </button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__img">
+        </div>
+        <div class="card__title">
+          <h2>Taller PSeInt #2</h2>
+        </div>
+        <div class="card__proyect-links">
+          <a href="https://github.com/VasquezJulioe/ControlGithub/tree/taller2">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="taller2.html">
+            <i class="fas fa-globe-asia"></i>
+          </a>
+          <a href="https://youtu.be/jPFkblLo6Go">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+        <div class="button-content">
+          <button class="project-details-button download-cv">
+            <a href="taller2.html">Detalles del Proyecto</a>
+          </button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__img">
+        </div>
+        <div class="card__title">
+          <h2>Taller PSeInt #3</h2>
+        </div>
+        <div class="card__proyect-links">
+          <a href="https://github.com/VasquezJulioe/ControlGithub/tree/taller3">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="taller3.html">
+            <i class="fas fa-globe-asia"></i>
+          </a>
+          <a href="https://youtu.be/XkAg0eQXb8k">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+        <div class="button-content">
+          <button class="project-details-button download-cv">
+            <a href="taller3.html">Detalles del Proyecto</a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="card">
+        <div class="card__img">
+        </div>
+        <div class="card__title">
+          <h2>Taller PSeInt #4</h2>
+        </div>
+        <div class="card__proyect-links">
+          <a href="https://github.com/VasquezJulioe/ControlGithub/tree/taller4">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="taller4.html">
+            <i class="fas fa-globe-asia"></i>
+          </a>
+          <a href="https://youtu.be/MUAnbpYU-AM">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+        <div class="button-content">
+          <button class="project-details-button download-cv">
+            <a href="taller4.html">Detalles del Proyecto</a>
+          </button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__img">
+        </div>
+        <div class="card__title">
+          <h2>Taller PSeInt #5</h2>
+        </div>
+        <div class="card__proyect-links">
+          <a href="https://github.com/VasquezJulioe/ControlGithub/tree/taller5">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="taller5.html">
+            <i class="fas fa-globe-asia"></i>
+          </a>
+          <a href="https://youtu.be/yET8Pwhsb4w">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+        <div class="button-content">
+          <button class="project-details-button download-cv">
+            <a href="taller5.html">Detalles del Proyecto</a>
+          </button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__img">
+        </div>
+        <div class="card__title">
+          <h2>Taller de CVS</h2>
+        </div>
+        <div class="card__proyect-links">
+          <a href="https://github.com/VasquezJulioe/ControlGithub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="tallerCVS.html">
+            <i class="fas fa-globe-asia"></i>
+          </a>
+          <a href="https://youtu.be/yET8Pwhsb4w">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+        <div class="button-content">
+          <button class="project-details-button download-cv">
+            <a href="tallerCVS.html">Detalles del Proyecto</a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="card">
+        <div class="card__img">
+        </div>
+        <div class="card__title">
+          <h2>Taller de Java</h2>
+        </div>
+        <div class="card__proyect-links">
+          <a href="https://github.com/VasquezJulioe/TallerJava">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="tallerJava.html">
+            <i class="fas fa-globe-asia"></i>
+          </a>
+          <a href="https://youtu.be/2YmmJQh7iCA">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+        <div class="button-content">
+          <button class="project-details-button download-cv">
+            <a href="tallerJava.html">Detalles del Proyecto</a>
+          </button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__img">
+        </div>
+        <div class="card__title">
+          <h2>Taller de HTML5</h2>
+        </div>
+        <div class="card__proyect-links">
+          <a href="https://github.com/VasquezJulioe/TallerHTML5/tree/3c3b6d2c2acda8af63ca336b7e0894edc03d96f8">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="tallerHTML.html">
+            <i class="fas fa-globe-asia"></i>
+          </a>
+          <a href="https://youtu.be/NAUyeItlwjY">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+        <div class="button-content">
+          <button class="project-details-button download-cv">
+            <a href="tallerHTML.html">Detalles del Proyecto</a>
+          </button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__img">
+        </div>
+        <div class="card__title">
+          <h2>Taller de CSS3</h2>
+        </div>
+        <div class="card__proyect-links">
+          <a href="https://github.com/VasquezJulioe/TallerHTML5/tree/tallerCCS3">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="tallerCSS.html">
+            <i class="fas fa-globe-asia"></i>
+          </a>
+          <a href="https://youtu.be/OyTwpyfuLNs">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+        <div class="button-content">
+          <button class="project-details-button download-cv">
+            <a href="tallerCSS.html">Detalles del Proyecto</a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="card">
+        <div class="card__img">
+        </div>
+        <div class="card__title">
+          <h2>Taller de JavaScript</h2>
+        </div>
+        <div class="card__proyect-links">
+          <a href="https://github.com/VasquezJulioe/TallerHTML5/tree/tallerJAVASCRIPT">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://vasquezjulioe.github.io/TallerHTML5/">
+            <i class="fas fa-globe-asia"></i>
+          </a>
+          <a href="https://youtu.be/v-eB1EnGirE">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+        <div class="button-content">
+          <button class="project-details-button download-cv">
+            <a href="tallerJavaScript.html">Detalles del Proyecto</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact" id="contact">
+    <div class="contact-heading">
+      <h2>Contacto</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="container-contact">
+      <img src="Utils/miFoto.jpg" alt="">
+      <div class="contact-form">
+        <h4>Envia me un mensaje...</h4>
+        <form class="form-group">
+          <input type="text" placeholder="Nombre" class="input">
+          <input type="email" placeholder="Email" class="input">
+          <textarea name="message" placeholder="Por favor escribe aquí..."></textarea>
+          <button type="submit" class="btn-submit" onclick="alert('MENSAJE ENVIADO')">Enviar Mensaje</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <h2>Julio Vasquez</h2>
+      <h5>Ingeniero Electrónico</h5>
+    </div>
+    <div class="sotial-networks">
+      <a href="https://www.instagram.com/juliovasquezrojas/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://twitter.com/VasquezJulioe" target="_blank"><i class="fab fa-twitter-square"></i></a>
+      <a href="https://www.linkedin.com/in/vasquezjulioe/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.youtube.com/@julioevasquez8684" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://github.com/VasquezJulioe" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+  </footer>
+  <script type="text/JavaScript" src="js/script.js"></script>
+</body>
+
+</html>
